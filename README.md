@@ -31,7 +31,7 @@ Run the app:
 
 `python3 app.py`
 
-Now you can navigate to the local url which can be found on http://0.0.0.0:5000/ or http://localhost:5000/
+Now you can navigate to the local URL which can be found on http://0.0.0.0:8765/ or http://localhost:8765/
 
 ## Contributing
 Pull requests, corrections, translations & fixes are welcome. Any contributions must be submitted under the same license that the original piece of work (see below). Take a look at any open issues or submit new ones if there is something that needs to be fixed or added.
