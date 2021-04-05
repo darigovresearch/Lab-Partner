@@ -13,6 +13,10 @@ Installing pip:
 
 `sudo apt install python3-pip`
 
+Upgrading pip (needed for opencv):
+
+`pip install --upgrade pip`
+
 If you use environments you can set one up to prevent clashes of installation with other projects.
 
 To create an environment:
@@ -32,6 +36,14 @@ Run the app:
 `python3 app.py`
 
 Now you can navigate to the local URL which can be found on http://0.0.0.0:8765/ or http://localhost:8765/
+
+You may need to enable rasperry pi Camera
+
+`sudo raspi-config`
+
+Test camera accesses
+
+`raspistill -o test.jpg`
 
 ## Contributing
 Pull requests, corrections, translations & fixes are welcome. Any contributions must be submitted under the same license that the original piece of work (see below). Take a look at any open issues or submit new ones if there is something that needs to be fixed or added.
