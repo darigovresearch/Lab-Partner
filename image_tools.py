@@ -14,7 +14,7 @@ def take_photo_now():
         pass
 
     # change folder
-    os.chdir("Data")
+    os.chdir("/home/pi/Lab-Partner/Data")
 
     # reading the camera
     cam = cv2.VideoCapture(0)
