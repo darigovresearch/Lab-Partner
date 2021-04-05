@@ -23,6 +23,7 @@ def every_five_minutes():
     cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(5)
+    cron.write()
 
 
 def every_ten_minutes():
@@ -31,6 +32,7 @@ def every_ten_minutes():
     cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(10)
+    cron.write()
 
 
 def every_fifteen_minutes():
@@ -39,6 +41,7 @@ def every_fifteen_minutes():
     cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(15)
+    cron.write()
 
 
 def every_thirty_minutes():
@@ -47,6 +50,7 @@ def every_thirty_minutes():
     cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(30)
+    cron.write()
 
 
 def every_sixty_minutes():
@@ -55,6 +59,7 @@ def every_sixty_minutes():
     cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.hour.every(1)
+    cron.write()
 
 
 if __name__ == '__main__':
