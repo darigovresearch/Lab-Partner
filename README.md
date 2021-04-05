@@ -7,7 +7,31 @@ Very often in labs you need to monitor a particular device which has an old seve
 2. to notify you as it happens so you can salvage your experiment before it is unsalvageable.
 
 ## Installation
-TODO
+On a Raspberry Pi, depending on the image you're using the python package manager pip may not be installed.
+
+Installing pip:
+
+`sudo apt install python3-pip`
+
+If you use environments you can set one up to prevent clashes of installation with other projects.
+
+To create an environment:
+
+`python3 -m venv env`
+
+To activate the environment:
+
+`source env/bin/activate`
+
+Install the requirements
+
+`pip install -r requirements.txt`
+
+Run the app:
+
+`python3 app.py`
+
+Now you can navigate to the local url which can be found on http://0.0.0.0:5000/ or http://localhost:5000/
 
 ## Contributing
 Pull requests, corrections, translations & fixes are welcome. Any contributions must be submitted under the same license that the original piece of work (see below). Take a look at any open issues or submit new ones if there is something that needs to be fixed or added.
