@@ -3,4 +3,51 @@
 
     <h1>Lab Partner</h1>
 
+    <h2>Current settings</h2>
+
+    {% if enabled == "Yes" %}
+    <p>Monitoring: Yes</p>
+    <p>Monitoring frequency: {{ frequency }}</p>
+    {% elif enabled == "No" %}
+    <p>Monitoring: No</p>
+    <p>Monitoring frequency: n/a</p>
+    {% else %}
+    <p>Monitoring: No</p>
+    <p>Monitoring frequency: n/a</p>
+    {% endif %}
+    
+    <h2>Adjust settings</h2>
+
+    <form action="/" method="POST">
+
+        <div class="form-group">
+            <label>Enabled</label>
+
+            <input type="radio" id="enabled-yes" name="enabled" value="enabled-yes">
+            <label for="enabled-yes">Yes</label>
+            <input type="radio" id="enabled-no" name="enabled" value="enabled-no">
+            <label for="enabled-no">No</label>
+        </div>
+
+        <div class="form-group">
+            <label>Frequency</label>
+
+            <input type="radio" id="freq-1" name="frequency" value="freq-1">
+            <label for="freq-1">Every minute</label>
+            <input type="radio" id="freq-5" name="frequency" value="freq-5">
+            <label for="freq-5">Every 5 minutes</label>
+            <input type="radio" id="freq-10" name="frequency" value="freq-10">
+            <label for="freq-10">Every 10 minutes</label>
+            <input type="radio" id="freq-15" name="frequency" value="freq-15">
+            <label for="freq-15">Every 15 minutes</label>
+            <input type="radio" id="freq-30" name="frequency" value="freq-30">
+            <label for="freq-30">Every 30 minutes</label>
+            <input type="radio" id="freq-60" name="frequency" value="freq-60">
+            <label for="freq-60">Every 60 minutes</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update settings</button>
+
+    </form>
+
 {% endblock %}

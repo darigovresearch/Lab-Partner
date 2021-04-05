@@ -6,6 +6,7 @@ def reset_all():
     cron = CronTab(user='pi')
     cron.remove_all()
     cron.write()
+    print("running reset_all")
 
 
 def every_minute():
@@ -15,6 +16,7 @@ def every_minute():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(1)
     cron.write()
+    print("running every_minute")
 
 
 def every_five_minutes():
@@ -24,6 +26,7 @@ def every_five_minutes():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(5)
     cron.write()
+    print("running every_five_minutes")
 
 
 def every_ten_minutes():
@@ -33,6 +36,7 @@ def every_ten_minutes():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(10)
     cron.write()
+    print("running every_ten_minutes")
 
 
 def every_fifteen_minutes():
@@ -42,6 +46,7 @@ def every_fifteen_minutes():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(15)
     cron.write()
+    print("running every_fifteen_minutes")
 
 
 def every_thirty_minutes():
@@ -51,6 +56,7 @@ def every_thirty_minutes():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(30)
     cron.write()
+    print("running every_thirty_minutes")
 
 
 def every_sixty_minutes():
@@ -60,6 +66,7 @@ def every_sixty_minutes():
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.hour.every(1)
     cron.write()
+    print("running every_sixty_minutes")
 
 
 if __name__ == '__main__':
