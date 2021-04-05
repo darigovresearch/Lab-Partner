@@ -20,6 +20,7 @@ def every_minute():
 def every_five_minutes():
     """every_five_minutes is code to take a photo every five minutes"""
     reset_all()
+    cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(5)
 
@@ -27,6 +28,7 @@ def every_five_minutes():
 def every_ten_minutes():
     """every_ten_minutes is code to take a photo every ten minutes"""
     reset_all()
+    cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(10)
 
@@ -34,6 +36,7 @@ def every_ten_minutes():
 def every_fifteen_minutes():
     """every_fifteen_minutes is code to take a photo every fifteen minutes"""
     reset_all()
+    cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(15)
 
@@ -41,6 +44,7 @@ def every_fifteen_minutes():
 def every_thirty_minutes():
     """every_thirty_minutes is code to take a photo every thirty minutes"""
     reset_all()
+    cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.minute.every(30)
 
@@ -48,9 +52,15 @@ def every_thirty_minutes():
 def every_sixty_minutes():
     """every_sixty_minutes is code to take a photo every sixty minutes"""
     reset_all()
+    cron = CronTab(user='pi')
     job = cron.new(command='python3 /home/pi/Lab-Partner/image_tools.py')
     job.hour.every(1)
 
 
 if __name__ == '__main__':
     every_minute()
+    # every_five_minutes()
+    # every_ten_minutes()
+    # every_fifteen_minutes()
+    # every_thirty_minutes()
+    # every_sixty_minutes()
