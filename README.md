@@ -37,7 +37,7 @@ Run the app:
 
 Now you can navigate to the local URL which can be found on http://0.0.0.0:8765/ or http://localhost:8765/
 
-You may need to enable rasperry pi Camera
+You may need to enable Raspberry Pi Camera if you've chosen to use one
 
 `sudo raspi-config`
 
