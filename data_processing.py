@@ -3,6 +3,7 @@ import os
 import datetime
 import pandas as pd
 
+
 def generate_initial_db():
     """ generate_initial_db is code to make a data.csv file given that the
     Data/ folder already exists and contains images taken on a schedule
