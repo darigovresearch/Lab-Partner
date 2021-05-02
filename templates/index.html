@@ -15,7 +15,7 @@
     <p>Monitoring: No</p>
     <p>Monitoring frequency: n/a</p>
     {% endif %}
-    
+
     <h2>Adjust settings</h2>
 
     <form action="/" method="POST">
@@ -49,5 +49,13 @@
         <button type="submit" class="btn btn-primary">Update settings</button>
 
     </form>
+
+    <h2>Data</h2>
+
+    {% if data != "No data yet available" %}
+    {{ data|safe }}
+    {% else %}
+    <p>No data yet available</p>
+    {% endif %}
 
 {% endblock %}
