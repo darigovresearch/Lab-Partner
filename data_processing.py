@@ -10,7 +10,7 @@ def generate_initial_db():
     """
 
     full_data = []
-    list_of_files = os.listdir("Data")
+    list_of_files = os.listdir("static//Data")
     print(list_of_files)
 
     for i in range(0, len(list_of_files)):
@@ -46,7 +46,7 @@ def generate_initial_db():
     print(df.columns)
 
     # exporting dataset
-    df.to_csv("Data//data.csv", index=False)
+    df.to_csv("static//Data//data.csv", index=False)
 
 
 if __name__ == '__main__':

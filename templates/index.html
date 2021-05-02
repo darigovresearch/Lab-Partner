@@ -58,4 +58,11 @@
     <p>No data yet available</p>
     {% endif %}
 
+    <h2>Images</h2>
+    {% if data != "No images yet available" %}
+    {{ images|safe }}
+    {% else %}
+    <p>No images yet available</p>
+    {% endif %}
+
 {% endblock %}
