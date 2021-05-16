@@ -15,6 +15,9 @@ dp.generate_initial_db()
 @app.route('/', methods=['POST', 'GET'])
 def home():
 
+    # update database onload of the page
+    dp.generate_initial_db()
+
     parsed_data = "No data yet available"
     parsed_images = "No images yet available"
 
