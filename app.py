@@ -49,7 +49,7 @@ def home():
                                     'index.html',
                                     enabled="No",
                                     data=parsed_data,
-                                    images=parsed_data
+                                    images=parsed_images
                                   )
         elif enabled_status == "enabled-yes":
             if frequecy_status == "freq-1":
@@ -59,7 +59,7 @@ def home():
                                         enabled="Yes",
                                         frequency="Every minute",
                                         data=parsed_data,
-                                        images=parsed_data
+                                        images=parsed_images
                                       )
             elif frequecy_status == "freq-5":
                 s.every_five_minutes()
@@ -68,7 +68,7 @@ def home():
                                         enabled="Yes",
                                         frequency="Every 5 minutes",
                                         data=parsed_data,
-                                        images=parsed_data
+                                        images=parsed_images
                                        )
             elif frequecy_status == "freq-10":
                 s.every_ten_minutes()
@@ -77,7 +77,7 @@ def home():
                                         enabled="Yes",
                                         frequency="Every 10 minutes",
                                         data=parsed_data,
-                                        images=parsed_data
+                                        images=parsed_images
                                       )
             elif frequecy_status == "freq-15":
                 s.every_fifteen_minutes()
@@ -86,7 +86,7 @@ def home():
                                         enabled="Yes",
                                         frequency="Every 15 minutes",
                                         data=parsed_data,
-                                        images=parsed_data
+                                        images=parsed_images
                                       )
             elif frequecy_status == "freq-30":
                 s.every_thirty_minutes()
@@ -104,7 +104,7 @@ def home():
                                         enabled="Yes",
                                         frequency="Every 60 minutes",
                                         data=parsed_data,
-                                        images=parsed_data
+                                        images=parsed_images
                                       )
             else:
                 print("Incorrect selection")
