@@ -3,11 +3,14 @@
 from flask import Flask, render_template, request
 import scheduler as s
 import pandas as pd
+import data_processing as dp
 
 app = Flask(__name__)
 # line to prevent cache from not updating static files
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
+# generate folder & placeholder db on load
+dp.generate_initial_db()
 
 @app.route('/', methods=['POST', 'GET'])
 def home():

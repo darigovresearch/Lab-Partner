@@ -8,7 +8,8 @@ def take_photo_now():
     """take_photo_now is code to take a photo immediately"""
     try:
         # try to make the folder
-        os.mkdir("Data")
+        os.mkdir("static")
+        os.mkdir("static/Data")
     except Exception as e:
         # folder already exists
         pass

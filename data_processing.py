@@ -6,11 +6,20 @@ import pandas as pd
 
 def generate_initial_db():
     """ generate_initial_db is code to make a data.csv file given that the
-    Data/ folder already exists and contains images taken on a schedule
+    static/Data/ folder already exists and contains images taken on a schedule
     """
 
     full_data = []
-    list_of_files = os.listdir("static//Data")
+
+    try:
+        # try to read the folder
+        list_of_files = os.listdir("static//Data")
+    except Exception as e:
+        # make the folder
+        os.mkdir("static")
+        os.mkdir("static/Data")
+        list_of_files = os.listdir("static//Data")
+        
     print(list_of_files)
 
     for i in range(0, len(list_of_files)):
