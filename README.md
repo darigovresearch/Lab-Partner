@@ -6,44 +6,16 @@ Very often in labs you need to monitor a particular device which has an old seve
 1. read the display to monitor this range to either let you know that this situation has occurred to tell you that you need to start again or
 2. to notify you as it happens so you can salvage your experiment before it is unsalvageable.
 
-## Installation
-On a Raspberry Pi, depending on the image you're using the python package manager pip may not be installed.
 
-Installing pip:
 
-`sudo apt install python3-pip`
 
-Upgrading pip (needed for opencv):
 
-`pip install --upgrade pip`
 
-If you use environments you can set one up to prevent clashes of installation with other projects.
 
-To create an environment:
 
-`python3 -m venv env`
 
-To activate the environment:
-
-`source env/bin/activate`
-
-Install the requirements
-
-`pip install -r requirements.txt`
-
-Run the app:
-
-`python3 app.py`
-
-Now you can navigate to the local URL which can be found on http://0.0.0.0:8765/ or http://localhost:8765/
-
-You may need to enable Raspberry Pi Camera if you've chosen to use one
-
-`sudo raspi-config`
-
-Test camera accesses
-
-`raspistill -o test.jpg`
+## Documentation
+Documentation for this project is currently being hosted here - https://darigovresearch.github.io/Lab-Partner/
 
 ## Contributing
 Pull requests, corrections, translations & fixes are welcome. Any contributions must be submitted under the same license that the original piece of work (see below). Take a look at any open issues or submit new ones if there is something that needs to be fixed or added.
