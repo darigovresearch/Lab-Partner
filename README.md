@@ -25,7 +25,7 @@ Watch our video on how to contribute to open source for a complete overview -> [
 ## License
 Unless otherwise specified, everything in this repository is covered by the following licence:
 
-The license for this project is yet to be decided on, join the discussion [here](https://github.com/darigovresearch/Lab-Partner/issues/16).
+The license for this project is yet to be decided on, join the discussion [in this GitHub issue](https://github.com/darigovresearch/Lab-Partner/issues/16).
 
 ----
 
