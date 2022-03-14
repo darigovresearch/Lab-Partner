@@ -53,4 +53,5 @@ Test camera accesses
 Housekeeping
 ------------
 Make sure if this is a fresh installation to update the default password. This is done by running the following command and following the onscreen prompts. Make sure it's memorable, secure and login again immediately afterwords to ensure the update has taken place.
-`passwd`
+::
+    passwd
