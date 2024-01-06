@@ -1,6 +1,6 @@
 # Security Policy
 
-This is a the security policy for this particular repository i.e. the [Parametric-ornament-holder](https://github.com/darigovresearch/Parametric-ornament-holder).
+This is a the security policy for this particular repository i.e. the [Lab-Partner](https://github.com/darigovresearch/Lab-Partner/)
 
 ### What to do
 In the unlikely event of a vulnerability:
