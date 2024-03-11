@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Lab Partner'
-copyright = '2021-2022, Darigov Research'
+copyright = '2021-2024, Darigov Research'
 author = 'Darigov Research'
 
 # The full version, including alpha/beta/rc tags
