@@ -10,6 +10,7 @@ def take_photo_now():
         # try to make the folder
         os.mkdir("static")
         os.mkdir("static/Data")
+        os.makedirs("static/Compressed")
     except Exception as e:
         # folder already exists
         pass
@@ -27,6 +28,12 @@ def take_photo_now():
 
     # save image
     cv2.imwrite(filename, img)
+
+    # compress image
+    os.chdir("/home/pi/Lab-Partner/static/Compressed")
+    compressed_path = filename
+    compression_rate = [cv2.IMWRITE_JPEG_QUALITY, 50]
+    cv2.imwrite(compressed_path, img, compression_rate)
 
     # releasing the camera
     cam.release()
