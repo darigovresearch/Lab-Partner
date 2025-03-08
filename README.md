@@ -6,16 +6,16 @@ Very often in labs you need to monitor a particular device which has an old seve
 1. read the display to monitor this range to either let you know that this situation has occurred to tell you that you need to start again or
 2. to notify you as it happens so you can salvage your experiment before it is unsalvageable.
 
-
-
-
-
-
-
-
-
 ## Documentation
 Documentation for this project is currently being hosted here - https://darigovresearch.github.io/Lab-Partner/
+
+### Editing the documentation
+
+After cloning the repository if you wish to edit or make improvements to it, you need to edit the relevant files in the `docs_source` folder and when you want to build it, you run the following command from the root folder of the repository. The output will then be able to be opened locally from the `docs` folder.
+
+```
+sphinx-build docs_source/source docs
+```
 
 ## Contributing
 Pull requests, corrections, translations & fixes are welcome. Any contributions must be submitted under the same license that the original piece of work (see below). Take a look at any open issues or submit new ones if there is something that needs to be fixed or added.
