@@ -13,17 +13,17 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import datetime
 
 
 # -- Project information -----------------------------------------------------
-
+today = datetime.datetime.today()
 project = 'Lab Partner'
-copyright = '2021-2024, Darigov Research'
+copyright = '2021-%s, Darigov Research'%(today.year)
 author = 'Darigov Research'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.1'
-
 
 # -- General configuration ---------------------------------------------------
 
